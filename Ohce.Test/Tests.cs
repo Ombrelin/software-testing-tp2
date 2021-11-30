@@ -7,7 +7,7 @@ namespace Ohce.Test
     {
 
         [Test]
-        public void GetGreetings_20h_ReturnsBuenasNoche()
+        public void GetGreetings_22h_ReturnsBuenasNoche()
         {
             // Given
             var ohce = new Ohce(new FakeCurrentTimeProvider(new TimeOnly(20,0)));
@@ -17,6 +17,19 @@ namespace Ohce.Test
             
             // Then
             Assert.AreEqual("¡Buenas noches John Shepard!", result);
+        }
+        
+        [Test]
+        public void GetGreetings_9h_ReturnsBuenasDias()
+        {
+            // Given
+            var ohce = new Ohce(new FakeCurrentTimeProvider(new TimeOnly(9,0)));
+            
+            // When
+            string result = ohce.GetGreeting("John Shepard");
+            
+            // Then
+            Assert.AreEqual("¡Buenos días John Shepard!", result);
         }
     }
 }
