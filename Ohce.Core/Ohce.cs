@@ -6,15 +6,17 @@ namespace Ohce
 {
 
     public class Ohce
-    {
-        private readonly ICurrentTimeProvider currentTimeProvider;
-        private readonly IO io;
+    {       
         private static string STOP_MESSAGE = "Stop!";
         private static string PALINDROME_MESSAGE = "¡Bonita palabra!";
         private static string GOOD_NIGHT_MESSAGE = "¡Buenas noches";
         private static string GOOD_DAY_MESSAGE = "¡Buenos días";
         private static string GOOD_AFTERNOON_MESSAGE = "¡Buenas tardes";
-        
+        private static string GOODBYE_MESSAGE = "Adios";
+
+        private readonly ICurrentTimeProvider currentTimeProvider;
+        private readonly IO io;
+
         public Ohce(ICurrentTimeProvider currentTimeProvider, IO io)
         {
             this.currentTimeProvider = currentTimeProvider;
@@ -31,7 +33,7 @@ namespace Ohce
                 
                 if (input == STOP_MESSAGE)
                 {
-                    await io.OutPutStringAsync($"Adios {name}");
+                    await io.OutPutStringAsync($"{GOODBYE_MESSAGE} {name}");
                     await io.HandleExitAsync();
                     break;
                 }
