@@ -14,7 +14,14 @@ namespace Ohce
 
         public string GetGreeting(string name)
         {
-            return $"¡Buenas noches {name}!";
+            if (this.currentTimeProvider.CurrentTime.Hour >= 20)
+            {
+                return $"¡Buenas noches {name}!";
+            }
+            else
+            {
+                return $"¡Buenos días {name}!";
+            }
         }
     }
 }
