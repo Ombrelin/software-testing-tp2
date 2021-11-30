@@ -10,7 +10,7 @@ namespace Ohce.Test
 
         public IReadOnlyList<string> Output => outputtedStrings.AsReadOnly();
 
-        public bool HandleExitCalled { get; private set; } = false;
+        public bool HandleExitCalled { get; private set; }
 
         public FakeIO(Queue<string> stringsToInput)
         {

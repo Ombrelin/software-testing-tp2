@@ -11,9 +11,10 @@ namespace Ohce.CLI
             await Console.Out.FlushAsync();
         }
 
-        public Task<string> GetInputStringAsync()
+        public async Task<string> GetInputStringAsync()
         {
-            return Console.In.ReadLineAsync();
+            string? inputStringAsync = await Console.In.ReadLineAsync();
+            return inputStringAsync ?? throw new ArgumentException("Please input a value");
         }
 
         public Task HandleExitAsync()
