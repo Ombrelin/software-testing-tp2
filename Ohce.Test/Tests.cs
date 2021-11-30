@@ -16,7 +16,7 @@ namespace Ohce.Test
             string result = ohce.GetGreeting("John Shepard");
             
             // Then
-            Assert.Equals("¡Buenas noches John Shepard!", result);
+            Assert.AreEqual("¡Buenas noches John Shepard!", result);
         }
     }
 }

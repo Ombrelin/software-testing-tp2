@@ -14,7 +14,7 @@ namespace Ohce
 
         public string GetGreeting(string name)
         {
-            throw new NotImplementedException();
+            return $"¡Buenas noches {name}!";
         }
     }
 }
