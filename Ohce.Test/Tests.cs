@@ -165,6 +165,7 @@ namespace Ohce.Test
             
             // Then
             Assert.AreEqual("¡Buenas noches John Shepard!",fakeIO.Output[0]);
+            Assert.AreEqual("Adios John Shepard",fakeIO.Output[1]);
             Assert.True(fakeIO.HandleExitCalled);
         }
         
