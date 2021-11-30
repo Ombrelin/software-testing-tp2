@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Ohce\Ohce.csproj" />
+      <ProjectReference Include="..\Ohce.Core\Ohce.Core.csproj" />
     </ItemGroup>
 
 </Project>

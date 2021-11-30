@@ -1,8 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohce", "Ohce\Ohce.csproj", "{B3FE5A83-89DC-40B8-8403-A90F78755F9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohce.Core", "Ohce.Core\Ohce.Core.csproj", "{B3FE5A83-89DC-40B8-8403-A90F78755F9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohce.Test", "Ohce.Test\Ohce.Test.csproj", "{A649799F-63FB-4EC5-B123-420660D77175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ohce.CLI", "Ohce.CLI\Ohce.CLI.csproj", "{DD04A10C-C6E7-49E7-A26C-B46466E0125A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,9 @@ Global
 		{A649799F-63FB-4EC5-B123-420660D77175}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A649799F-63FB-4EC5-B123-420660D77175}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A649799F-63FB-4EC5-B123-420660D77175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD04A10C-C6E7-49E7-A26C-B46466E0125A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD04A10C-C6E7-49E7-A26C-B46466E0125A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD04A10C-C6E7-49E7-A26C-B46466E0125A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD04A10C-C6E7-49E7-A26C-B46466E0125A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
